@@ -1,4 +1,25 @@
-body {
+@-o-viewport {
+    width: device-width;
+  }
+  @-ms-viewport {
+    width: device-width;
+  }
+  @viewport {
+    width: device-width;
+  }
+  
+  html {
+    overflow-y: auto;
+  }
+  
+  img,
+  audio,
+  video,
+  canvas {
+    max-width: 100%;
+  }
+  
+  body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -30,6 +51,10 @@ nav ul li a {
 .hero {
     text-align: center;
     padding: 20px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+
 }
 
 .hero img {
@@ -40,6 +65,8 @@ nav ul li a {
 .hero h1 {
     font-size: 1em;
     color: #333;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .hero {
@@ -50,6 +77,7 @@ nav ul li a {
 
 .content {
     padding: 20px;
+    padding-top: 0px;
 }
 
 .section {
@@ -75,11 +103,10 @@ nav ul li a {
 }
 
 footer {
-    background-color: #002366;
+    background-color: #001742;
     color: #fff;
     text-align: center;
-    padding-top:10px;
-}
+} 
 
 footer .cta p {
     font-size: 1.2em;
@@ -88,7 +115,7 @@ footer .cta p {
 }
 
 footer button {
-    background-color: #002366;
+    background-color: #001742;
     color: #FF8282;
     border: none;
     padding: 10px 20px;
@@ -99,25 +126,29 @@ footer button {
 }
 
 footer .socials {
-    margin-top: 20px;
+    margin-top: 10px;
     background-color: #E7EBA2;
+    align-content: left;
 }
 
 footer .socials img {
+    float: left;
     width: auto;
     height: 40px;
     margin: 0 10px;
 }
 
 .cta {
+    padding-top: 2px;
     color:#FF8282;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
 }
 
 .quote {
     font-family: cursive;
     font-size: 2em;
+    margin-top: 5px;
 }
 
 h1 {
@@ -128,3 +159,15 @@ h1 {
 .italic {
     font-style:italic;
 }
+
+.hero img {
+    max-height: 500px;
+    width:auto;
+}
+
+.growth2 img, .growth3 img {
+    height: auto;
+    width:100%;
+    display: block;
+}
+  
